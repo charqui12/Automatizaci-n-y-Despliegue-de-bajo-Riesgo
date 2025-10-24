@@ -4,11 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Sitio Automatizado</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Despliegue Automatizado</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #0f172a; /* Azul oscuro técnico */
+      color: #e2e8f0; /* Gris claro */
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #38bdf8; /* Azul brillante */
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #cbd5e1; /* Gris más suave */
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      background: #1e293b; /* Caja oscura */
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      max-width: 500px;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    /* Botón de ejemplo */
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, este es mi despliegue automatizado</h1>
-  <p>Subido a Vercel con bajo riesgo </p>
+  <div class="box">
+    <h1>Hola, este es mi despliegue automatizado</h1>
+    <p>Subido a GitHub Pages con bajo riesgo</p>
+    <a href="https://charqui12.github.io/Automatizaci-n-y-Despliegue-de-bajo-riesgo/" class="btn" target="_blank">Ver Sitio</a>
+  </div>
+
+  <footer>
+    Presentación práctica: Automatización y despliegue de bajo riesgo
+  </footer>
 </body>
 </html>
+
